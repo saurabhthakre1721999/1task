@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Search Clone</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      #google-container {
+        text-align: center;
+        margin: 150px auto;
+        max-width: 600px;
+      }
+
+      #google-logo {
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      #search-box {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+      }
+
+      #search-button {
+        background-color: #4285f4;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      #voice-search {
+        background-color: #4285f4;
+        color: #fff;
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #voice-search-icon {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="google-container">
+      <img
+        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        alt="Google Logo"
+        id="google-logo"
+      />
+      <br />
+      <form action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" id="search-box" autofocus />
+        <br />
+        <input type="submit" value="Google Search" id="search-button" />
+      </form>
+      <div id="voice-search">
+        <img
+          src="https://www.gstatic.com/images/icons/material/system/1x/mic_none_grey600_24dp.png"
+          alt="Voice Search"
+          id="voice-search-icon"
+        />
+        Voice Search
+      </div>
+    </div>
+  </body>
+</html>
